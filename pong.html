@@ -6,35 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="pong.css">
-  <title>Document</title>
+  <title>Pong Game</title>
 
 </head>
 
 <body>
   <div class="score">
     <div id="player-score">
-      <h1>Your score is<span id="current-score"> 0</span> </h1>
+      <h1>Timing<span id="current-score"> 0</span> </h1>
     </div>
   </div>
-  <div class="pong-container">
-    <div class="pong-1" id="pong-1" onclick="clickedPong(event.target)" >
-      ♣
-    </div>
-    <div class="pong-1" id="pong-2" onclick="clickedPong(event.target)" >
-     ♦
-    </div>
-    <div class="pong-1" id="pong-3" onclick="clickedPong(event.target)" >
-      ♣
-    </div>
-    <div class="pong-1" id="pong-4" onclick="clickedPong(event.target)" >
-      ♦
-    </div>
-    <div class="pong-1" id="pong-5" onclick="clickedPong(event.target)" >
-      ♠
-    </div>
-    <div class="pong-1" id="pong-6" onclick="clickedPong(event.target)" >
-      ♠
-    </div>
+  <div class="pong-container" id="game">
+  <div id="character"></div>
   </div>
  
 </body>

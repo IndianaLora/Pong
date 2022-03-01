@@ -1,27 +1,52 @@
 *, *::after, *::before {
     box-sizing: border-box;
+    
   }
   
   :root {
     --hue: 200;
     --saturation: 50%;
     --foreground-color: white;
-    --background-color: rgb(138, 13, 13);
+    --background-color: rgb(14, 13, 13);
   }
-  
+
   body {
     margin: 0;
     background-color: var(--background-color);
     color:var(--foreground-color);
     overflow: hidden;
   }
-  
-  .pong-1{
-    background-color: black;
-    margin: 0 auto;
-    width: 80px;
-    padding: 40px 0px 0px 35px;
-    cursor: pointer;
-    border-radius: 10%;
-    margin-bottom: 5%;
+  #game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: white;
+    margin: auto;
+    overflow: hidden;
   }
+  #character{
+    width:20px;
+    height: 20px;
+    background-color: purple;
+    border-radius:50%;
+    position:relative;
+    top:440px;
+    left: 190px;
+    z-index:10000000;
+  } 
+  .block{
+    width: 400px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+.hole{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
